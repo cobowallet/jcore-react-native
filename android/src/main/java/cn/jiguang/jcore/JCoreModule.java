@@ -1,5 +1,5 @@
 
-package cn.jiguang.plugins;
+package cn.jiguang.plugins.jcore;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

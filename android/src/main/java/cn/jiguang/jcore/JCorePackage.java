@@ -1,5 +1,5 @@
 
-package cn.jiguang.plugins;
+package cn.jiguang.plugins.jcore;
 
 import java.util.Arrays;
 import java.util.Collections;
