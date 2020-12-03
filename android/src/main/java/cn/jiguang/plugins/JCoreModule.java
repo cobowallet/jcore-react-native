@@ -12,7 +12,7 @@ public class JCoreModule extends ReactContextBaseJavaModule {
     public static ReactApplicationContext reactContext;
 
 
-    public JPushModule(ReactApplicationContext reactApplicationContext) {
+    public JCoreModule(ReactApplicationContext reactApplicationContext) {
         super(reactContext);
         reactContext = reactApplicationContext;
     }

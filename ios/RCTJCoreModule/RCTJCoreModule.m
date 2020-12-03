@@ -9,5 +9,12 @@
 #import "RCTJCoreModule.h"
 
 @implementation RCTJCoreModule
+RCT_EXPORT_MODULE(JCoreModule);
+
++ (BOOL)requiresMainQueueSetup {
+	return NO;
+}
+
+RCT_EXPORT_METHOD(testCountryCode: (NSString *)core) { }
 
 @end
