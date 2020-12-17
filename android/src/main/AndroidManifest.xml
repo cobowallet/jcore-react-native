@@ -29,6 +29,7 @@
 
         <service
             android:name="cn.jpush.android.service.PushService"
+			android:process=":pushcore"
             android:exported="false">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.REGISTER" />
@@ -40,6 +41,7 @@
 
         <service
             android:name="cn.jiguang.plugins.service.JCoreModuleService"
+			android:process=":pushcore"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -56,7 +58,16 @@
                 <category android:name="${applicationId}" />
             </intent-filter>
         </service>
-
+		<provider
+			android:authorities="${applicationId}.DownloadProvider"
+			android:name="cn.jpush.android.service.DownloadProvider"
+			android:exported="true" />
+		<provider
+			android:authorities="${applicationId}.DataProvider"
+			android:name="cn.jpush.android.service.DataProvider"
+			android:process=":pushcore"
+			android:exported="false" />
+		
     </application>
 
 </manifest>
